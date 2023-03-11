@@ -24,5 +24,4 @@ jobs:
         github_token: ${{ secrets.ACCESS_TOKEN }}
         publish_dir: ./docs
         publish_branch: docs
-        destination_dir: ./docs/
         keep_files: true
