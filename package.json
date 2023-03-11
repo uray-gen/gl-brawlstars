@@ -1,0 +1,35 @@
+{
+  "name": "gl-brawlstars",
+  "version": "0.0.35",
+  "description": "The Game Lobby's Brawl Stars API wrapper.",
+  "main": "index.js",
+  "directories": {
+    "src": "src"
+  },
+  "scripts": {
+    "docs:devbuild": "docgen --source src --custom docs/index.yml --output docs/dev.json",
+    "docs:build": "docgen --source src --custom docs/index.yml --output docs/main.json",
+    "docs:test": "docgen --source src"
+  },
+  "keywords": [
+    "brawl stars",
+    "brawl",
+    "supercell",
+    "game lobby",
+    "uray gen"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uray-gen/gl-brawlstars.git"
+  },
+  "author": "The Game Lobby (Uray Gen)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uray-gen/gl-brawlstars/issues"
+  },
+  "homepage": "https://devdocs.uray.gen.tr/",
+  "dependencies": {
+    "@discordjs/docgen": "^0.10.0",
+    "node-fetch": "^2.6.7"
+  }
+}
