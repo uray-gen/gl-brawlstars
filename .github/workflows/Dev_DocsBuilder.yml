@@ -1,4 +1,4 @@
-name: Docs Builder
+name: Docs Builder (Development)
 
 on:
   push:
