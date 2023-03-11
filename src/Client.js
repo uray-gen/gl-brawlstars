@@ -37,7 +37,7 @@ class Client {
 
         /**
          * Uses clubs endpoint. Includes `clubs`.
-         * @type {ClubEndpoint}
+         * @type {ClubEndpoints}
          */
         this.clubs = new ClubEndpoint(this);
 
