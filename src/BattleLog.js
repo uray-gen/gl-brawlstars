@@ -71,7 +71,7 @@ class BattleLog {
         /**
          * A match in a battle log.
          * @typedef {Object} BattleLogMatch
-         * @property {string} battleTime The time that the battle was played in `Zulu time`
+         * @property {string} battleTime The time that the battle was played as an ISO string
          * @property {BattleLogMatchEvent} event The event that this match took place
          * @property {BattleLogMatchBattleInfo} battle The battle info for this match
          */
