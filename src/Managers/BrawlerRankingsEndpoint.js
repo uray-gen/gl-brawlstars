@@ -1,5 +1,5 @@
 const { Client } = require('../../index');
-const ApiError = require('../../Errors/ApiError');
+const ApiError = require('../Errors/ApiError');
 
 const RankedPlayer = require('../RankedPlayer');
 

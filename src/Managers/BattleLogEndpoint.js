@@ -1,7 +1,7 @@
 const { Client } = require('../../index');
 const TagResolver = require('../Functions/TagResolver');
 const BattleLog = require('../BattleLog');
-const ApiError = require('../../Errors/ApiError');
+const ApiError = require('../Errors/ApiError');
 
 /**
  * Respresents `players/battlelog` endpoint at the api.

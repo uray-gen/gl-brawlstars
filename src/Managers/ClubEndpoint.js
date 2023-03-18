@@ -1,6 +1,6 @@
 const { Client } = require('../../index');
 const TagResolver = require('../Functions/TagResolver');
-const ApiError = require('../../Errors/ApiError');
+const ApiError = require('../Errors/ApiError');
 
 const Club = require('../Club');
 

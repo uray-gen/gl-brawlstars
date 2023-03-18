@@ -1,7 +1,7 @@
 const { Client } = require('../../index');
 const BattleLogEndpoint = require('./BattleLogEndpoint');
 const TagResolver = require('../Functions/TagResolver');
-const ApiError = require('../../Errors/ApiError');
+const ApiError = require('../Errors/ApiError');
 
 const Player = require('../Player');
 
