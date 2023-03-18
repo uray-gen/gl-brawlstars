@@ -1,4 +1,4 @@
-const { Client } = require('../../../index');
+const { Client } = require('../../index');
 const ApiError = require('../../Errors/ApiError');
 
 const RankedPlayer = require('../RankedPlayer');

@@ -1,4 +1,4 @@
-const { Client } = require('../../../index');
+const { Client } = require('../../index');
 
 const ClubRankingsEndpoint = require('./ClubRankingsEndpoint');
 const BrawlerRankingsEndpoint = require('./BrawlerRankingsEndpoint');
