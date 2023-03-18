@@ -1,4 +1,4 @@
-const TagResolver = require('../../Functions/TagResolver');
+const TagResolver = require('../Functions/TagResolver');
 const ApiError = require('../../Errors/ApiError');
 const ClientError = require('../../Errors');
 

@@ -1,5 +1,5 @@
 const { Client } = require('../../index');
-const TagResolver = require('../../Functions/TagResolver');
+const TagResolver = require('../Functions/TagResolver');
 const BattleLog = require('../BattleLog');
 const ApiError = require('../../Errors/ApiError');
 
