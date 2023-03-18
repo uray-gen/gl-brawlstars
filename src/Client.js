@@ -1,5 +1,5 @@
-const Error = require('../Errors');
-const ApiError = require('../Errors/ApiError');
+const Error = require('./Errors');
+const ApiError = require('./Errors/ApiError');
 
 const PlayersEndpoints = require('./Managers/PlayersEndpoints');
 const ClubEndpoint = require('./Managers/ClubEndpoint');
@@ -37,7 +37,7 @@ class Client {
 
         /**
          * Uses clubs endpoint. Includes `clubs`.
-         * @type {ClubEndpoints}
+         * @type {ClubEndpoint}
          */
         this.clubs = new ClubEndpoint(this);
 

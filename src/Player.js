@@ -1,5 +1,4 @@
-const ClientError = require('../Errors');
-const PlayerFunctions = require('../Functions/PlayerFunctions');
+const ClientError = require('./Errors');
 const Client = require('./Client');
 
 const ClubFromTag = require('./Managers/ClubFromTag');

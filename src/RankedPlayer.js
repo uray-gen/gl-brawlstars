@@ -1,4 +1,4 @@
-const ClientError = require('../Errors');
+const ClientError = require('./Errors');
 const PlayerFromTag = require('./Managers/PlayerFromTag');
 
 /**

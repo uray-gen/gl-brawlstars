@@ -1,5 +1,4 @@
-const ClientError = require('../Errors');
-const PlayerFunctions = require('../Functions/PlayerFunctions');
+const ClientError = require('./Errors');
 const Client = require('./Client');
 
 /**
@@ -71,7 +70,7 @@ class BattleLog {
         /**
          * A match in a battle log.
          * @typedef {Object} BattleLogMatch
-         * @property {string} battleTime The time that the battle was played as an ISO string
+         * @property {string} battleTime The time that the battle was played in `Zulu time`
          * @property {BattleLogMatchEvent} event The event that this match took place
          * @property {BattleLogMatchBattleInfo} battle The battle info for this match
          */
