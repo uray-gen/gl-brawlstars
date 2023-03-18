@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/uray-gen/gl-brawlstars/issues"
   },
-  "homepage": "https://devdocs.uray.gen.tr/",
+  "homepage": "https://gl-devdocs.uray.gen.tr/docs/#/docs/brawlstars/main/general/welcome",
   "dependencies": {
     "@discordjs/docgen": "^0.10.0",
     "node-fetch": "^2.6.7"
