@@ -1,6 +1,6 @@
 {
   "name": "gl-brawlstars",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "The Game Lobby's Brawl Stars API wrapper.",
   "main": "index.js",
   "directories": {
