@@ -11,6 +11,7 @@ class RankedClub {
      */
     constructor (client, res) {
 
+        if (!client) return new ClientError('ClassMissingClient', 'RankedClub');
         if (!res) return new ClientError('ClassMissingResponse', 'RankedClub');
         if (!res['tag']) return new ClientError('ClassInvalidResponse', 'RankedClub');
 

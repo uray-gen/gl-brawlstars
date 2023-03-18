@@ -13,6 +13,7 @@ class Club {
      */
     constructor (client, res) {
 
+        if (!client) return new ClientError('ClassMissingClient', 'Club');
         if (!res) return new ClientError('ClassMissingResponse', 'Club');
         if (!res['tag']) return new ClientError('ClassInvalidResponse', 'Club');
 

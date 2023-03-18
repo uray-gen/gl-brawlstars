@@ -12,7 +12,7 @@ class Brawler {
     constructor (client, res) {
 
         if (!client) return new ClientError('ClassMissingClient', 'Brawler');
-        if (typeof client !== Client) return new ClientError('ClassInvalidClient', 'Brawler');
+        //if (typeof client !== Client) return new ClientError('ClassInvalidClient', 'Brawler');
         if (!res) return new ClientError('ClassMissingResponse', 'Brawler');
         if (!res['id']) return new ClientError('ClassInvalidResponse', 'Brawler');
 

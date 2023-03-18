@@ -14,7 +14,7 @@ class Player {
     constructor (client, res) {
 
         if (!client) return new ClientError('ClassMissingClient', 'Player');
-        if (typeof client !== Client) return new ClientError('ClassInvalidClient', 'Player');
+        //if (typeof client !== Client) return new ClientError('ClassInvalidClient', 'Player');
         if (!res) return new ClientError('ClassMissingResponse', 'Player');
         if (!res['tag']) return new ClientError('ClassInvalidResponse', 'Player');
 

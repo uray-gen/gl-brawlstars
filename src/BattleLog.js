@@ -12,6 +12,7 @@ class BattleLog {
      */
     constructor (client, res) {
 
+        if (!client) return new ClientError('ClassMissingClient', 'BattleLog');
         if (!res) return new ClientError('ClassMissingResponse', 'BattleLog');
         if (!res['tag']) return new ClientError('ClassInvalidResponse', 'BattleLog');
 

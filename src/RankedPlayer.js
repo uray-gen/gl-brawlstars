@@ -12,6 +12,7 @@ class RankedPlayer {
      */
     constructor (client, res, viaBrawler) {
 
+        if (!client) return new ClientError('ClassMissingClient', 'RankedPlayer');
         if (!res) return new ClientError('ClassMissingResponse', 'RankedPlayer');
         if (!res['tag']) return new ClientError('ClassInvalidResponse', 'RankedPlayer');
 
