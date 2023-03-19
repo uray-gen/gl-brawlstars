@@ -80,13 +80,13 @@ class RotatingEvent {
          * @type {EventDate}
          */
 
-        this.startTime = { iso: res?.startTime, date: new Date(Date(res?.startTime)) };
+        this.startTime = { iso: res?.startTime, date: parseISOString(res?.startTime) };
 
         /**
          * This event's ending time as a date object.
          * @type {EventDate}
          */
-        this.endTime = { iso: res?.endTime, date: new Date(Date(res?.startTime)) };
+        this.endTime = { iso: res?.endTime, date: parseISOString(res?.endTime) };
 
         /**
          * This event's slot's id on the api.
@@ -94,6 +94,11 @@ class RotatingEvent {
          */
         this.slot = res?.slotId;
     }
+}
+
+function parseISOString(s) {
+  var b = s.split(/\D+/);
+  return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
 }
 
 module.exports = RotatingEvent;
