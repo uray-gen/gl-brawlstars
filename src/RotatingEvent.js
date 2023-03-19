@@ -9,7 +9,6 @@ class RotatingEvent {
      */
     constructor (res) {
 
-        if (!client) return new ClientError('ClassMissingClient', 'RotatingEvent');
         if (!res) return new ClientError('ClassMissingResponse', 'RotatingEvent');
         if (!res['event']) return new ClientError('ClassInvalidResponse', 'RotatingEvent');
 
