@@ -79,7 +79,6 @@ class RotatingEvent {
          * This event's ending time as a date object.
          * @type {EventDate}
          */
-
         this.startTime = { iso: res?.startTime, date: parseISOString(res?.startTime) };
 
         /**
