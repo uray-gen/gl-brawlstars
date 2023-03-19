@@ -20,7 +20,7 @@ class RotationEndpoint {
 
     /**
      * Get event's rotation data from api.
-     * @returns {?RotatingEvent}
+     * @returns {?Array<RotatingEvent>}
      */
     async fetch() {
         let res = await this.client.fetchAPI(`events/rotation`);
