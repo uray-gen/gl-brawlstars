@@ -69,23 +69,16 @@ class RotatingEvent {
         };
 
         /**
-         * A date object for an event.
-         * @typedef {Object} EventDate
-         * @property {string} iso The ISO string for this date.
-         * @property {Date} date The date object for this date.
+         * This event's ending time as an iso string.
+         * @type {string}
          */
+        this.startTime = res?.startTime;
 
         /**
-         * This event's ending time as a date object.
-         * @type {EventDate}
+         * This event's ending time as an iso string.
+         * @type {string}
          */
-        this.startTime = { iso: res?.startTime, date: parseISOString(res?.startTime) };
-
-        /**
-         * This event's ending time as a date object.
-         * @type {EventDate}
-         */
-        this.endTime = { iso: res?.endTime, date: parseISOString(res?.endTime) };
+        this.endTime = res?.endTime;
 
         /**
          * This event's slot's id on the api.
