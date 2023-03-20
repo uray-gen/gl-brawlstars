@@ -7,8 +7,8 @@
     "src": "src"
   },
   "scripts": {
-    "docs:devbuild": "docgen --source src --custom docs/index.yml --output docs/dev.json",
-    "docs:build": "docgen --source src --custom docs/index.yml --output docs/main.json",
+    "docs:devbuild": "docgen --source src --custom docs/index.yml --output docs/next.json",
+    "docs:build": "docgen --source src --custom docs/index.yml --output docs/stable.json",
     "docs:test": "docgen --source src"
   },
   "keywords": [
