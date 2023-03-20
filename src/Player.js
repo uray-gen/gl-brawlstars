@@ -69,17 +69,20 @@ class Player {
 
         /**
          * A player's experience object.
+         * * Note: This data does not update anymore.
          * @typedef {Object} PlayerExperience
          * @property {number} level Player's experience level.
          * @property {number} points Player's all time total experience points.
+         * @property {number} needed Player's experience level.
+         * @deprecated Not updating since March/April 2023 update.
          */
 
         /**
          * This player's experience object.
-         * * Note: This data does not update anymore.
          * @type {PlayerExperience}
+         * @deprecated Not updating since March/April 2023 update.
          */
-        this.experience = { level: res?.expLevel, points: res?.expPoints };
+        this.experience = { level: res?.expLevel, points: res?.expPoints, needed: ((res?.expLevel-1)*10)+40 };
 
         /**
          * This player's championship challange qualification
