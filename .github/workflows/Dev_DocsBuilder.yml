@@ -3,7 +3,7 @@ name: Docs Builder (Development)
 on:
   push:
     branches:
-      - dev
+      - next
 
 jobs:
   deploy:
