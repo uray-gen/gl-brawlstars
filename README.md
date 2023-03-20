@@ -16,7 +16,7 @@
 
 - ✅ Easy to use
 - ✅ Feature-rich
-- ✅ [Has documentation avaible](https://gl-devdocs.uray.gen.tr/)
+- ✅ [Has documentation avaible](https://gl-devdocs.uray.gen.tr/docs/#/docs/brawlstars/)
 
 # How to install?
 
@@ -28,7 +28,7 @@
 # How to use?
 
 * Create an api key on the [Brawl Stars API (click here)](https://developer.brawlstars.com/#/account)
-* Check out [the documentation (click here)](https://gl-devdocs.uray.gen.tr/)
+* Check out [the documentation (click here)](https://gl-devdocs.uray.gen.tr/docs/#/docs/brawlstars/)
 
 ## Have some examples!
 
