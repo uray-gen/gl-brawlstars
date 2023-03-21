@@ -29,7 +29,7 @@ class BrawlersEndpoints {
         let res = await this.client.fetchAPI(`brawlers/${id}`);
         if (typeof res === ApiError) return null;
         
-        return new Brawler(res);
+        return new Brawler(this.client, res);
     }
 
     /**
@@ -41,7 +41,7 @@ class BrawlersEndpoints {
         if (typeof res === ApiError) return null;
         
         return res?.items.map(brawler => {
-            return new Brawler(brawler);
+            return new Brawler(this.client, brawler);
         });
     }
 }
