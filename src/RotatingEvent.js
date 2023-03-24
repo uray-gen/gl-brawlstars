@@ -70,15 +70,15 @@ class RotatingEvent {
 
         /**
          * This event's ending time as an iso string.
-         * @type {string}
+         * @type {Date}
          */
-        this.startTime = res?.startTime;
+        this.startTime = BrawlTZParse(res?.startTime);
 
         /**
          * This event's ending time as an iso string.
-         * @type {string}
+         * @type {Date}
          */
-        this.endTime = res?.endTime;
+        this.endTime = BrawlTZParse(res?.endTime);
 
         /**
          * This event's slot's id on the api.
@@ -88,9 +88,17 @@ class RotatingEvent {
     }
 }
 
-function parseISOString(s) {
-  var b = s.split(/\D+/);
-  return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
+function BrawlTZParse(string) {
+    console.log(string)
+    let year = string.substring(0, 4);
+    let month = string.substring(4, 6);
+    let day = string.substring(6, 8);
+    let hour = string.substring(9, 11);
+    let minute = string.substring(11, 13);
+    let second = string.substring(13, 15);
+    let ms = string.substring(16, 19);
+
+    return new Date(year,month,day,hour,minute,second,ms);
 }
 
 module.exports = RotatingEvent;
