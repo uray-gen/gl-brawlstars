@@ -90,7 +90,7 @@ class RotatingEvent {
 
 function BrawlTZParse(string) {
     let year = string.substring(0, 4);
-    let month = string.substring(4, 6);
+    let month = Number(string.substring(4, 6))-1;
     let day = string.substring(6, 8);
     let hour = string.substring(9, 11);
     let minute = string.substring(11, 13);
